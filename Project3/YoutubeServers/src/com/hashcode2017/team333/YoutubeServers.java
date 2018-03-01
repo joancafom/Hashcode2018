@@ -30,6 +30,8 @@ public class YoutubeServers {
 		instantiateProblem(readFile("res/me_at_the_zoo.in"));
 		System.out.println("Problem Instantiated!");
 		System.out.println("jj");
+		System.out.println("ja");
+
 	}
 	
 	private static List<String> readFile(String fileName){

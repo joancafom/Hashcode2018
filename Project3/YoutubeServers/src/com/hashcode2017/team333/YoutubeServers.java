@@ -29,7 +29,7 @@ public class YoutubeServers {
 		System.out.println("Reading the input file...");
 		instantiateProblem(readFile("res/me_at_the_zoo.in"));
 		System.out.println("Problem Instantiated!");
-		System.out.println("jej");
+		System.out.println("jj");
 	}
 	
 	private static List<String> readFile(String fileName){

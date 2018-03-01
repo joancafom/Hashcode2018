@@ -26,6 +26,7 @@ public class ProblemaHashcode {
 		List<String> ls = Stream2.fromFile(file).toList();
 		rides = new ArrayList<Ride>();
 		boolean firstLine = true;
+		int index = 0;
 		for(String s : ls){
 			if(firstLine){
 				String[] at = Stream2.fromString(s, " ").toArray((int x)->new String[x]);
@@ -38,7 +39,8 @@ public class ProblemaHashcode {
 				firstLine=false;
 			}
 			else{
-				rides.add(new Ride(s));
+				rides.add(new Ride(s, index));
+				index++;
 			}
 		}
 		

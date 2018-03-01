@@ -49,5 +49,18 @@ public class ProblemaHashcode {
 	public static ProblemaHashcode create(String file) {		
 		return new ProblemaHashcode(file);
 	}
-
+	
+	public void finalOutput(List<List<Ride>> vehicles) {
+		for(List<Ride> ridesForVehicle: vehicles) {
+			outputVehicle(ridesForVehicle);
+		}
+	}
+		 
+	public void outputVehicle(List<Ride> ridesForVehicle) {
+		String out = String.valueOf(ridesForVehicle.size());
+		for(Ride r:ridesForVehicle) { 
+		   out = out +" "+ r.getId();
+		}
+		System.out.println(out); 
+	}
 }
